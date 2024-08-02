@@ -20,8 +20,8 @@ Describe the facial expressions and emotions shown in each image of the young wo
 Do not attempt to identify or name specific individuals in images.
 The order is of images in the grid left to right, top to bottom.
 Return a "caption" corresponding to each image.
-Each "caption" must start with the phrase "SusanJones the women". For example, "SusanJones the women smiling warmly with her teeth showing"
-Output JSONL format in the following format: {"image-ref": "s3://sagemaker-us-east-1-123456789012/titan_image_finetune_dataset_01/images/susanjones_01.jpg", "caption": "SusanJones the women smiling warmly with her teeth showing"}
+Each "caption" must start with the phrase "SusanJones the woman". For example, "SusanJones the woman smiling warmly with her teeth showing"
+Output JSONL format in the following format: {"image-ref": "s3://sagemaker-us-east-1-123456789012/titan_image_finetune_dataset_01/images/susanjones_01.jpg", "caption": "SusanJones the woman smiling warmly with her teeth showing"}
 Increment the numeric suffix of each "image-ref". For example, susanjones_01.jpg, susanjones_02.jpg, susanjones_03.jpg
 Only output the JSONL data; do not include an additional output, preamble, explanation, or chain of thought.
 ```
@@ -60,7 +60,7 @@ Just output the Python script; do not include additional output, preamble, expla
 
 ## Example 5: Sports Car Images - Captions with Bedrock
 
-Desired format of output, where `zsrtcar the car` is the unique token for the subject.
+The desired format of output, where `zsrtcar the car` is the unique token for the subject.
 
 ```text
 zsrtcar the car <description of image 1-2 sentences>.
@@ -83,7 +83,7 @@ Just output the Python script; do not include additional output, preamble, expla
 
 ## Example 6: Sport Car Images - Tags with Bedrock
 
-Desired format of output, where `zsrtcar the car` is the unique token for the subject.
+The desired format of output, where `zsrtcar the car` is the unique token for the subject.
 
 ```text
 zsrtcar the car, tag1, tag2, tag3, tag4, tagN
